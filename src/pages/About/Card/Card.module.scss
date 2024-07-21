@@ -1,0 +1,41 @@
+.wrapper {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 0.375rem;
+    color: var(--white-color);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+      transform: translateY(-1rem);
+    }
+
+    .icon {
+      font-size: 2rem;
+    }
+    
+    .text {
+      margin-top: 1.25rem;
+      h4 {
+        font-size: 1.125rem;
+        font-weight: 600;
+        margin: 12px 0;
+      }
+      p {
+        font-size: 0.875rem;
+      }
+    }
+}
+
+.bg-blue{
+    background-color: #2D69F0;
+}
+.bg-red{
+    background-color: #DD246E;
+}
+.bg-purple{
+    background-color: #8007E6;
+}
+.bg-green{
+    background-color: #0CAE74;
+}

@@ -1,0 +1,202 @@
+.wrapper{
+    background-color: var(--secondary-color);
+    padding: 40px 0;
+    height: 92vh;
+}
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.leftContent{
+    width: 50%;
+    color:var(--black-color);
+}
+.headingTitle{
+    font-size: 36px ;
+    line-height: 1.25;
+    color:var(--black-color);
+    font-weight: 600;
+}
+// search
+.search_wrapper{
+    position: relative;
+    color: var(--gray-color);
+    margin-top: 20px;
+
+    &:focus-within{
+        color:#9ca3af;
+    }
+
+    input{
+        padding: 12px 0px;
+        font-size: 14px;
+        background-color: var(--white-color);
+        border-radius: 6px;
+        padding-left: 40px;
+
+        &:focus{
+            outline: none;
+        }
+    }
+
+    .search_icon{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        padding-left: 8px;
+
+        button{
+            padding: 4px;
+
+            &:focus{
+                outline: none;
+
+            }
+        }
+    }
+}
+
+//right content
+.rightContent{
+    width: 50%;
+    position: relative;
+}
+.thumbnail1{
+    position: relative;
+
+    img{
+        position: absolute;
+        top: 128px;
+        left:40px;
+        width: 384px;
+    }
+}
+.thumbnail2{
+    height: 85vh;
+    width: 100%;
+
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+        z-index: 20;
+        position: relative;
+        top:0;
+    }
+}
+
+.content{
+    .congrat1{
+        background-color: var(--white-color);
+        position: absolute;
+        top: 224px;
+        left: 0;
+        z-index: 30;
+        padding: 8px;
+        display: flex;
+        align-items: center;
+        border-radius: 8px;
+    }
+
+    .congrat_icon{
+        width: 40px;
+        height: 40px;
+        color: var(--white-color);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fb923c;
+    }
+    .text{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding: 0 16px;
+    }
+
+    .congrat2{
+        background-color: var(--white-color);
+        position: absolute;
+        left: 192px;
+        bottom: 128px;
+        z-index: 30;
+        padding: 8px;
+        display: flex;
+        align-items: center;
+        border-radius: 8px;
+        padding-right: 32px;
+    }
+    .graduationIcon{
+        width: 40px;
+        height: 40px;
+        color: var(--white-color);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color:  #60a5fa;
+    }
+
+    .btn_user{
+        background-color: var(--white-color);
+        position: absolute;
+        top: 224px;
+        right:-128px;
+        z-index: 30;
+        padding: 8px;
+        display: flex;
+        align-items: center;
+        border-radius: 8px;
+    }
+    .btn_book{
+        background-color: var(--white-color);
+        position: absolute;
+        top: 128px;
+        right:128px;
+        z-index: 30;
+        padding: 8px;
+        display: flex;
+        align-items: center;
+        border-radius: 8px;
+    }
+    .book_icon{
+        width: 40px;
+        height: 40px;
+        color: var(--white-color);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color:  #818cf8;
+    }
+}
+
+@media (max-width: 800px) {
+    .wrapper {
+        height: 100%;
+    }
+    .content{
+        flex-direction: column;
+    }
+    .leftContent{
+        width: 100%;
+    }
+    .rightContent{
+        width: 100%;
+    }
+    .thumbnail1{
+        img{
+            left: 40px;
+        }
+    }
+    .btn_user{
+        top: 384px;
+        right:-102px !important;
+    }
+
+}
