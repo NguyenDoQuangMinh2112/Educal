@@ -11,7 +11,6 @@ import { FaUser } from 'react-icons/fa'
 import { IoMdSettings } from 'react-icons/io'
 import { IoNotifications } from 'react-icons/io5'
 import { MdLogout } from 'react-icons/md'
-
 import Menu from '../Popper/Menu/Menu'
 import Button from '~/components/Button/Button'
 

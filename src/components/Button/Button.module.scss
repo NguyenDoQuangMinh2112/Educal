@@ -8,7 +8,12 @@
     padding: 8px;
 
     .title{
-        color:black
+        color:black;
+    }
+    .text{
+        font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 40px;
     }
 
     .icon {
@@ -18,6 +23,12 @@
     }
     .whiteColor{
         color: var(--white-color);
+    }
+    .svg_icon{
+        position: absolute;
+        top: 50%;
+        translate: 0 -50%;
+        left: 16px;
     }
 }
 
@@ -74,4 +85,47 @@
     text-align: center;
     display: flex;
     justify-content: center;
+}
+.back{
+    position: fixed;
+    top: 7px;
+    left: 10px;
+    display: flex;
+    gap: 6px;
+    padding: 20px;
+    font-size: 1.6rem;
+    opacity: .7;
+    transition: opacity .2s;
+    color:gray;
+
+
+    .title{
+        color: gray !important;
+        font-weight: 400;
+    }
+
+    &:hover{
+        .title,.icon{
+            color: black !important;
+        }
+       
+    }
+}
+.login-btn{
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px 20px;
+    border: 1px solid #dee3e9;
+    font-weight: 600;
+    font-size: 1.6rem;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: opacity .25s;
+    border-radius: 100px;
+    background-color: #1dbfaf;
+
+    .title{
+        color:white;
+    }
 }

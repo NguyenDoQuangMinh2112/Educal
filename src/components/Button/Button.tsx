@@ -1,7 +1,7 @@
 import classNames from 'classnames/bind'
 import { Link } from 'react-router-dom'
 import styles from './Button.module.scss'
-import googleIcon from '~/assets/images/google.svg'
+// import googleIcon from '~/assets/images/google.svg'
 
 interface ButtonProps {
   to?: string
@@ -9,13 +9,13 @@ interface ButtonProps {
   primary?: boolean
   outline?: boolean
   text?: boolean
-  isHideSvg?: boolean
   rounded?: boolean
   disabled?: boolean
   small?: boolean
   large?: boolean
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   leftIcon?: React.ReactNode
+  svgIcon?: string
   children: React.ReactNode
   className?: string
   classNameIcon?: string
@@ -31,7 +31,7 @@ const Button = ({
   href,
   primary = false,
   outline = false,
-  isHideSvg = false,
+  svgIcon,
   text = false,
   rounded = false,
   disabled = false,
@@ -73,11 +73,14 @@ const Button = ({
   const classesIcon = cx('icon', {
     [classNameIcon || '']: classNameIcon
   })
+  const classesSvgIcon = cx('svg_icon', {
+    [classNameIcon || '']: classNameIcon
+  })
 
   return (
     <Comp className={classes} {...props}>
       {leftIcon && <span className={classesIcon}>{leftIcon}</span>}
-      {isHideSvg && <img src={googleIcon} alt="" />}
+      {svgIcon && <img src={svgIcon} alt="" className={classesSvgIcon} />}
       <span className={classesTitle}>{children}</span>
     </Comp>
   )
