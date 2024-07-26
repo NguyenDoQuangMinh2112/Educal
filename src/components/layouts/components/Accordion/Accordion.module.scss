@@ -28,6 +28,17 @@
     font-weight: 400;
     position: relative;
     overflow: hidden;
+
+    svg{
+        position: absolute;
+    left: 14px;
+    color: red;
+    font-size: 23px;
+    }
+
+    strong{
+        font-weight: 400;
+    }
 }
 .timeOfSection{
     min-width: 72px;

@@ -30,7 +30,34 @@
         justify-content: space-between;
     }
 }
+.topic_list .topic_heading{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.topic_list .list{
+    margin-top: 4px;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
 
+    li{
+        position: relative;
+        flex-basis: 50%;
+        margin-top: 12px;
+        padding: 0 24px;
+        font-size: 1.4rem;
+        line-height: 1.6;
+        color: #333;
+
+        svg{
+            font-size: 1.4rem;
+            position: absolute;
+            top: 2px;
+            left: 0;
+            color: red;
+        }
+    }
+}
 .subHead{
     display: flex;
     align-items: center;
@@ -57,4 +84,11 @@
     font-weight: 600;
     -webkit-user-select: none;
     user-select: none;
+}
+
+
+@media only screen and (max-width: 768px){
+    .topic_list .list{
+        flex-direction: column;
+    }
 }

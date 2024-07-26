@@ -26,7 +26,7 @@ const Login = ({ setShowLogin }: LoginProps) => {
             {' '}
             <img src="	https://accounts.fullstack.edu.vn/assets/logo-lV2rGpF0.png" alt="" />
           </a>
-          <h1 className={cx('heading-title')}>Login to Educal</h1>
+          <h1 className={cx('heading-title')}>Đăng nhập với Educal</h1>
           <p className={cx('warning')}>
             Mỗi người nên sử dụng riêng một tài khoản, tài khoản nhiều người sử dụng chung sẽ bị khóa.
           </p>
@@ -53,7 +53,7 @@ const Login = ({ setShowLogin }: LoginProps) => {
                 </div>
               </div>
               <div className={cx('remember')}>
-                <input type="checkbox" id="remember" />
+                <input type="checkbox" id="remember" checked />
                 <label htmlFor="remember">Ghi nhớ đăng nhập</label>
               </div>
               <Button className={cx('login-btn')}>Đăng nhập</Button>
@@ -85,7 +85,7 @@ const Login = ({ setShowLogin }: LoginProps) => {
             <a href=""> Đăng ký</a>
           </p>
           <a className={cx('forgotPassword')} href="">
-            Forgot password?
+            Quên mật khẩu?
           </a>
           <p className={cx('rules')}>
             Việc bạn tiếp tục sử dụng trang web này đồng nghĩa bạn đồng ý với
